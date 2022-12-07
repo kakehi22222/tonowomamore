@@ -1,0 +1,54 @@
+<div class="body">
+  <div class="signup_main_image">
+    <%= image_tag "s1城壁（夜）.jpg"%>
+  </div>
+  <div class="form_main">
+    <div class="new_sign_up">新規登録</div>
+    <div class="basic">
+      <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <%= render "devise/shared/error_messages", resource: resource %>
+    </div>
+
+    <div class="form-group">
+      <div class="field">
+        <div class='form-text-wrap'>
+          <label class="form-text">ニックネーム</label>
+          <span class="indispensable">必須</span>
+        </div>
+      </div>
+      <%= f.text_area :nickname, class:"input-default", id:"nickname", placeholder:"例) game太郎", maxlength:"25" %>
+      <div class="field">
+        <div class='form-text-wrap'>
+          <%= f.label :email, class:"form-text_email" %><span class="indispensable">必須</span><br />
+        </div>
+        <%= f.email_field :email, class:"input-default", autocomplete: "email" %>
+      </div>
+      <div class="field">
+        <div class='form-text-wrap'>
+          <%= f.label :password, class:"form-text" %>
+          <% if @minimum_password_length %>
+          <em>(<%= @minimum_password_length %> 文字以上入力必要です)</em>
+          <% end %><br />
+        </div>
+        <%= f.password_field :password, class:"input-default", autocomplete: "new-password" %>
+      </div>
+
+      <div class="field">
+        <div class='form-text-wrap'>
+          <%= f.label :password_confirmation, class:"form-text" %><br />
+        </div>
+          <%= f.password_field :password_confirmation, class:"input-default", autocomplete: "new-password" %>
+      </div>
+
+      <div class="actions">
+        <%= f.submit "新規登録", class:"sign_up_btn" %>
+      </div>
+      <% end %>
+      <div class="reg_new_move_btn">
+        <a class="field"><%= render "devise/shared/links" %></a>
+        <%= link_to "トップへ戻る" ,root_path ,class:"back_main_btn"%>
+      </div>
+    </div>
+  </div>
+</div>
+

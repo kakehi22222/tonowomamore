@@ -1,0 +1,159 @@
+/* セッションニューのボディーも同じ */
+.body {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+/* ここまで */
+
+.signup_main_image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 75%;
+  height: 100vh;
+  width: 100%;
+}
+
+.form_main {
+  position: absolute;
+  top: 0;
+  left: 20%;
+  width: 30%;
+  height: 100%;
+  font-family: 'Yuji Syuku', serif;
+}
+
+.new_sign_up {
+  margin: 65px 0 10px;
+  font-size: 53px;
+  color: moccasin;
+}
+
+.indispensable {
+  background-color: orangered;
+  color: whitesmoke;
+  padding: 1px 6px 2px;
+  border-radius: 5px;
+}
+
+/* セッションニューも同じ */
+.field {
+  margin: 2px 0;
+}
+
+.form-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.form-text-wrap {
+  padding: 10px 0;
+}
+
+.form-text {
+  font-size: 16px;
+  font-weight: 450;
+}
+/* ここまで */
+
+.form-text_email {
+  font-size: 16px;
+  font-weight: 450;
+  margin-right: 5px;
+}
+
+
+.input-default {
+  width: 100%;
+  height: 48px;
+  padding: 10px 16px 8px;
+  border-radius: 7px;
+  border: 1px solid #ccc;
+  background: #fff;
+  font-size: 16px;
+  resize: none;
+}
+
+.field_with_errors {
+  display: contents;
+}
+
+.actions {
+  margin: auto;
+}
+
+.sign_up_btn {
+  margin: 15px 0 23px;
+  padding: 8px 13px;
+  height: 45px;
+  font-family: 'Yuji Syuku', serif;
+  border: 1px solid dimgray;
+  border-radius: 8px;
+  box-shadow: 1.5px 1.5px 1.5px black;
+  font-size: 16px;
+  background-color: gray;
+}
+
+.sign_up_btn:hover {
+  border: 1px solid black;
+  color: maroon;
+  background-color: gainsboro;
+  font-size: 18px;
+}
+
+.reg_new_move_btn {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.reg_new_login {
+  position: absolute;
+  left: 0;
+  width: 130px;
+  height: 35px;
+  text-align: center;
+  border: 1px solid dimgray;
+  text-decoration: none;
+  padding: 8px 3px;
+  color: rgb(53, 52, 52);
+  background-color: rgb(226, 192, 2);
+  border-radius: 8px;
+  box-shadow: 1.5px 1.5px 1.5px black;
+}
+
+.reg_new_login:hover {
+  color: black;
+  background-color: khaki;
+  border: 1px solid black;
+  font-size: 17px;
+}
+
+.back_main_btn {
+  width: 130px;
+  height: 35px;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid darkslategray;
+  text-decoration: none;
+  margin-right: 0;
+  padding: 8px;
+  color: khaki;
+  background-color: teal;
+  border-radius: 8px;
+  box-shadow: 1.5px 1.5px 1.5px black;
+}
+
+.back_main_btn:hover {
+  font-size: 17px;
+  background-color: rgb(52, 155, 98);
+}
+
+#error_explanation {
+  color: rgb(203, 38, 38);
+  font-size: 15px;
+}

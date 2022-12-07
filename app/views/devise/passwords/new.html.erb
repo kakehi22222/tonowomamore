@@ -1,0 +1,29 @@
+<div class="body">
+
+  <div class="forget_main_image">
+    <%= image_tag "s1城壁（日中）.jpg"%>
+  </div>
+
+  <div class="forget_form">
+    <div class="forget_login_pass">パスワード再設定</div>
+
+    <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+      <%= render "devise/shared/error_messages", resource: resource %>
+
+      <div class="field">
+        <div class='forget_form-text-wrap'>
+          <%= f.label :email, class:"forget_form-text_email" %><br />
+        </div>
+        <%= f.email_field :email,class:"input_forget_email" ,autofocus: true, autocomplete: "email" %>
+      </div>
+
+      <div class="mail_resend">
+        <%= f.submit "パスワード再設定メールの送信" %>
+      </div>
+    <% end %>
+    <div class="back_sign">
+      <%= render "devise/shared/links" %>
+    </div>
+        <%= link_to "トップへ戻る" ,root_path ,class:"forget_back_main_btn"%>
+  </div>
+</div>

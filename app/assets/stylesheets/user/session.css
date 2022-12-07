@@ -1,0 +1,136 @@
+.login_main_image {
+  position: absolute;
+  opacity: 75%;
+  height: 100vh;
+  width: 100%;
+}
+
+.login_form {
+  position: absolute;
+  left: 20%;
+  width: 30%;
+  height: 100vh;
+  font-family: 'Yuji Syuku', serif;
+  font-size: 20px;
+}
+
+.ses_login {
+  font-size: 63px;
+  margin: 65px 0 30px;
+  font-weight: bold;
+  color: rgb(251, 114, 114);
+}
+
+.ses_form-text_email,.ses_form-text,.ses_login_field {
+font-size: 19px;
+}
+
+.ses_login_field {
+  margin: 30px 0;
+}
+
+
+.ses_login_actions {
+  margin-bottom: 20px ;
+}
+
+/* リンクの編集 */
+
+.ses_login_btn {
+  width: 120px;
+  height: 45px;
+  text-align: center;
+  border: 1px solid dimgray;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 21px;
+  font-family: 'Yuji Syuku', serif;
+  background-color: yellow;
+  box-shadow: 1.5px 1.5px 1.5px black;
+}
+
+.ses_login_btn:hover {
+  background-color: gold;
+  border: 1px solid black;
+  font-size: 23px;
+  left:5px;
+}
+
+.ses_move_signup {
+  margin: 15px 0 20px;
+  width: 150px;
+  height: 45px;
+  text-align: center;
+  border: 1px solid dimgray;
+  border-radius: 8px;
+  box-shadow: 1.5px 1.5px 1.5px black;
+  background-color: rgb(242, 138, 100);
+}
+
+.ses_move_signup:hover {
+  background-color: tomato;
+}
+
+.ses_move_signup_btn {
+  padding: 10px 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 17px;
+  color: rgb(62, 8, 8);
+  line-height: 43px;
+  align-items: center;
+}
+
+.ses_move_signup_btn:hover {
+  font-size: 18px;
+  color: black;
+}
+
+
+.ses_forget_pass {
+  width: 220px;
+  height: 45px;
+  text-align: center;
+  border: 1px solid dimgray;
+  border-radius: 8px;
+  box-shadow: 1.5px 1.5px 1.5px black;
+  background-color: gray;
+}
+
+.ses_forget_pass_btn {
+  padding: 10px 10px;
+  border-radius: 8px;
+  line-height: 45px;
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+}
+
+.ses_forget_pass:hover {
+  background-color: aliceblue;
+}
+/* リンク編集ここまで */
+
+.signup_and_foget {
+  height: 160px;
+}
+
+.login_back_main_btn {
+  height: 35px;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid darkslategray;
+  text-decoration: none;
+  padding: 8px;
+  color: khaki;
+  background-color: teal;
+  border-radius: 8px;
+  box-shadow: 1.5px 1.5px 1.5px black;
+}
+
+.login_back_main_btn:hover {
+  font-size: 17px;
+  padding: 8px 5px;
+  background-color: rgb(52, 155, 98);
+}

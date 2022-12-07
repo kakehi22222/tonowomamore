@@ -1,0 +1,31 @@
+<div class="index_body">
+  <div class="main_image">
+    <%= image_tag "m城と忍者.jpg", class:'ninja_img'%>
+  </div>
+
+
+  <div class="logo_signs">
+    <h1 class="logo">殿を守れ</h1>
+    <%# <div id="big"><%= audio_tag 'seisen.mp3', id:"sound"</div> %>
+    <div class="operation">
+      <% if user_signed_in? %>
+        <ul class="signs">
+          <li><%= link_to current_user.nickname, "#", class: "user-nickname" %></li>
+          <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li>
+        </ul>
+      <% else %>
+        <ul class="signs_log">
+          <li class='sign_up'><%= link_to '新規登録', new_user_registration_path, class:"link_sign_up"%></li>
+          <li class='login'><%= link_to 'ログイン', new_user_session_path,class:"link_login" %></li>
+          <li class='guest_login'><%= link_to 'ゲストログイン', users_guest_sign_in_path,class:"link_guest_login", method: :post %></li>
+        </ul>
+      <% end %>
+    </div>
+  </div>
+
+  <% if user_signed_in? %>
+    <div class="game_start">
+      <%= link_to 'ゲームSTART', new_game_path, class:"link_game_start", id:"game_start" %>
+    </div>
+  <% end %>
+</div>
