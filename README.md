@@ -12,7 +12,7 @@
 10秒後に結果画面に自動的に移動します。
 
 # URL
-https://enemyinvasion22222.herokuapp.com/
+https://tonowomamore.onrender.com
 
 # ゲームプレーGIF
 https://user-images.githubusercontent.com/112855899/201569544-c6bfe930-e4b4-4cdf-be88-658661e7343d.mp4
@@ -59,6 +59,3 @@ https://user-images.githubusercontent.com/112855899/201569544-c6bfe930-e4b4-4cdf
 ### Association
 
 - belongs_to :user
-
-# Ruby version
-`ruby '2.6.5'`
