@@ -59,3 +59,6 @@ gem 'mini_magick'
 gem 'image_processing', '~> 1.2'
 gem 'audiojs-rails'
 gem 'rename'
+group :production do
+  gem 'pg'
+end
