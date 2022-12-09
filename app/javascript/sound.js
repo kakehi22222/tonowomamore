@@ -9,12 +9,12 @@ function sound() {
         kenSound.play();
         kenSound.volume = 0.3;
         });
-        const endingSound = document.getElementById("ending_sound");
-        const resultPoint = document.getElementById("result_point");
-        resultPoint.addEventListener('click',function(){
-          endingSound.play();
-          endingSound.volume = 0.3;
-        })
+        // const endingSound = document.getElementById("ending_sound");
+        // const resultPoint = document.getElementById("result_point");
+        // resultPoint.addEventListener('click',function(){
+        //   endingSound.play();
+        //   endingSound.volume = 0.3;
+        // })
   });
 };
   if(document.URL.match(/new/)){window.addEventListener('load', sound)};
